@@ -1,0 +1,19 @@
+jab aap kooi ejs page dekhenge to waha agar aapko koi v kisi prakar ka info dena hai 
+wo kehlata hai flash messages 
+they are more like good looking alert warning descriptions
+jaise agar hum paas galat dalte hai to ek flash message aata hai
+jo backend se connected hota hai
+
+iske lia  flash message sikhna hoga
+step 1 install package install connect-flash
+make sure you put the connect flash in app.use
+
+app.use har route se phle chalta hai 
+app.use me agar flash use krenge to wo harr route se phle chalega
+kisi v routee me aapko flash create krna hai
+aur kisi v dusre route pr aap use chalane ka try krenge
+
+
+---> UNDERSTANDING CREATION OF SESSION <-------
+npm i express-SESSION
+const es = require()
