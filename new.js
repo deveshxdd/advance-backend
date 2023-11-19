@@ -50,7 +50,14 @@ res.send(usr)
 
 
 // 3RD QUESTION HUM SPECIFIC DATE RANGE SE KAISE SEARCH KRKSTE HAI KISI V USER KO JO CREATE HUAA HAI
-
+// KI ISS DATE SE LEKE ISS DATE TAK KITNE LOG HAI
+app.get('/userrr',async(req,res)=>{
+  const date1 = Date.now('2023-11-17')
+  const date2 = Date.now('2023-11-19')
+    const usr = await User.find({date:date2})
+  
+ res.send(usr)
+ })
 
 
 
