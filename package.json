@@ -4,7 +4,7 @@
   "description": "![](Screenshot%202023-11-18%20114709.png)",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon new.js"
   },
   "author": "",
   "license": "ISC",

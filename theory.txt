@@ -12,7 +12,17 @@ app.use har route se phle chalta hai
 app.use me agar flash use krenge to wo harr route se phle chalega
 kisi v routee me aapko flash create krna hai
 aur kisi v dusre route pr aap use chalane ka try krenge
+aap flash use nhi krkste binaa express-session install kiye 
+ step to setup flash 
+ install connect-flash
+ setup express-session
+ use flash
 
+ humlog chahte hai ki jb hum kisi route pr jaae /failed uss route pr ek flash message bne 
+ aur wo flash msg humlogo ko / pe dikhe ejs me
+
+ flash msg ka mtlb server se kisi route mein data bnana aur uss data ko dusre route 
+ me use krpana
 
 ---> UNDERSTANDING CREATION OF SESSION <-------
 npm i express-SESSION

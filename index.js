@@ -3,7 +3,11 @@ const app = express()
 const port = 3001
 // flash ko install krne ke baad hamare paas ek exppress session hona chahia
 const expressSession = require('express-session')
+const flash = require('connect-flash')
+
 const cookieparser = require('cookie-parser')
+
+
 app.set('view engine','ejs')
 
 app.use(cookieparser())
@@ -13,6 +17,37 @@ app.use(expressSession({
     saveUninitialized:false,
     secret: "hello hello baaey baaye"
 }))
+
+// express session ke turant baad setup kro kyuki flash ke lia express session setup ke lia jruri h
+
+app.use(flash())
+
+// iske turant baad aap flash use krskte ho
+
+app.get('/',(req,res)=>{
+    res.render('file')
+})
+app.get('/login',(req,res)=>{
+   req.flash("agg",12) //aise bnate h flash data
+    res.render('file')
+})
+
+// mtlb hum flash se kisi v route me data save krke kisi v route me use krskte h
+ // agar login hojaae to hme next page dikha dena hai wrna 
+    // hame ye flash msg dedena hai 
+    // kaam ye h ki ek route ka data kisi dusre route me kaise use kare 
+    // jo ki possible nhi h islia flash msg use krrhe they allow this 
+
+
+
+
+
+
+
+
+
+
+
 
 app.get('/dev',(req,res)=>{
     req.session.ban = true
