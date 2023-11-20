@@ -27,3 +27,13 @@ aap flash use nhi krkste binaa express-session install kiye
 ---> UNDERSTANDING CREATION OF SESSION <-------
 npm i express-SESSION
 const es = require()
+
+
+
+
+task i have to complete till nov 
+2 node js project 
+full node js and
+react redux
+BECOME MERN STACK DEVELOPER IN 10 DAYS 
+
