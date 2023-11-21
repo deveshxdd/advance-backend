@@ -59,15 +59,12 @@ app.get('/userrr',async(req,res)=>{
  res.send(usr)
  })
 
-
-
-
-
-
-
-
-
-
+// 4th question ye hai ki hume saare wo data chahia jisme field exist krti ho 
+app.get('/field',async(req,res)=>{
+    const use = await User.find({description:{$exists:true}})
+    //  isse wo saare document milenge jisme ye description exist krta hoga bhale hi wo empty hoo
+    res.send(use)
+})
 app.listen(port,()=>{
     console.log("port started at port",port)
 })
